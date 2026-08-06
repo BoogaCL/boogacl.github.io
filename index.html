@@ -6,6 +6,7 @@
   <title>Booga's Webbed Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   
   <img src="banner.jpg" alt="Booga's Webbed Site on the Interwept">
@@ -28,6 +29,50 @@
     }
 </script>
 
+<script>
+  //Random chance of redirection
 
+  rand = Math.floor(Math.random() * 90) + 1; // Generate a random number between 1 and 90
+
+  if (rand == 84) {
+    window.location.href = "sylvie's space.html";
+  }
+</script>
+
+<script>
+  //Random chance of redirection
+
+  rand = Math.floor(Math.random() * 70) + 1; // Generate a random number between 1 and 70
+
+  if (rand == 64) {
+    window.location.href = "sosumi.xyz.html";
+  }
+</script>
+
+<script>
+  //FBI Jumpscare
+
+  rand = Math.floor(Math.random() * 6) + 1; // Generate a random number between 1 and 6
+
+  if (rand == 6) {
+    // 1. Create the image element
+const bgImage = document.createElement('img');
+bgImage.src = 'reagan_pomni.png';
+
+// 2. Apply CSS styles directly via JavaScript
+Object.assign(bgImage.style, {
+  position: 'fixed',
+  top: '0',
+  left: '0',
+  width: '100vw',
+  height: '100vh',
+  objectFit: 'fill', // Ensures it covers the entire viewport
+  zIndex: '9999'     // Pushes it to the front
+});
+// 3. Append the image to the body of the website
+document.body.appendChild(bgImage);
+  }
+  //this shit was vibecoded dont be surprised if it sucks
+  </script>
 </body>
 </html>

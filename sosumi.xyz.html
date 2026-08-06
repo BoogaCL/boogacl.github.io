@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://sosumi.xyz/home/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>:root{--litepicker-container-months-color-bg: #fff;--litepicker-container-months-box-shadow-color: #ddd;--litepicker-footer-color-bg: #fafafa;--litepicker-footer-box-shadow-color: #ddd;--litepicker-tooltip-color-bg: #fff;--litepicker-month-header-color: #333;--litepicker-button-prev-month-color: #9e9e9e;--litepicker-button-next-month-color: #9e9e9e;--litepicker-button-prev-month-color-hover: #2196f3;--litepicker-button-next-month-color-hover: #2196f3;--litepicker-month-width: calc(var(--litepicker-day-width) * 7);--litepicker-month-weekday-color: #9e9e9e;--litepicker-month-week-number-color: #9e9e9e;--litepicker-day-width: 38px;--litepicker-day-color: #333;--litepicker-day-color-hover: #2196f3;--litepicker-is-today-color: #f44336;--litepicker-is-in-range-color: #bbdefb;--litepicker-is-locked-color: #9e9e9e;--litepicker-is-start-color: #fff;--litepicker-is-start-color-bg: #2196f3;--litepicker-is-end-color: #fff;--litepicker-is-end-color-bg: #2196f3;--litepicker-button-cancel-color: #fff;--litepicker-button-cancel-color-bg: #9e9e9e;--litepicker-button-apply-color: #fff;--litepicker-button-apply-color-bg: #2196f3;--litepicker-button-reset-color: #909090;--litepicker-button-reset-color-hover: #2196f3;--litepicker-highlighted-day-color: #333;--litepicker-highlighted-day-color-bg: #ffeb3b}.show-week-numbers{--litepicker-month-width: calc(var(--litepicker-day-width) * 8)}.litepicker{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-size:0.8em;display:none}.litepicker button{border:none;background:none}.litepicker .container__main{display:-webkit-box;display:-ms-flexbox;display:flex}.litepicker .container__months{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:var(--litepicker-container-months-color-bg);border-radius:5px;-webkit-box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);width:calc(var(--litepicker-month-width) + 10px);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months.columns-2{width:calc((var(--litepicker-month-width) * 2) + 20px)}.litepicker .container__months.columns-3{width:calc((var(--litepicker-month-width) * 3) + 30px)}.litepicker .container__months.columns-4{width:calc((var(--litepicker-month-width) * 4) + 40px)}.litepicker .container__months.split-view .month-item-header .button-previous-month,.litepicker .container__months.split-view .month-item-header .button-next-month{visibility:visible}.litepicker .container__months .month-item{padding:5px;width:var(--litepicker-month-width);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months .month-item-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-weight:500;padding:10px 5px;text-align:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--litepicker-month-header-color)}.litepicker .container__months .month-item-header div{-webkit-box-flex:1;-ms-flex:1;flex:1}.litepicker .container__months .month-item-header div>.month-item-name{margin-right:5px}.litepicker .container__months .month-item-header div>.month-item-year{padding:0}.litepicker .container__months .month-item-header .reset-button{color:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button>svg{fill:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button *{pointer-events:none}.litepicker .container__months .month-item-header .reset-button:hover{color:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .reset-button:hover>svg{fill:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .button-previous-month,.litepicker .container__months .month-item-header .button-next-month{visibility:hidden;text-decoration:none;padding:3px 5px;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__months .month-item-header .button-previous-month *,.litepicker .container__months .month-item-header .button-next-month *{pointer-events:none}.litepicker .container__months .month-item-header .button-previous-month{color:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month>svg,.litepicker .container__months .month-item-header .button-previous-month>img{fill:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month:hover{color:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-previous-month:hover>svg{fill:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month{color:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month>svg,.litepicker .container__months .month-item-header .button-next-month>img{fill:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month:hover{color:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month:hover>svg{fill:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-weekdays-row{display:-webkit-box;display:-ms-flexbox;display:flex;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;color:var(--litepicker-month-weekday-color)}.litepicker .container__months .month-item-weekdays-row>div{padding:5px 0;font-size:85%;-webkit-box-flex:1;-ms-flex:1;flex:1;width:var(--litepicker-day-width);text-align:center}.litepicker .container__months .month-item:first-child .button-previous-month{visibility:visible}.litepicker .container__months .month-item:last-child .button-next-month{visibility:visible}.litepicker .container__months .month-item.no-previous-month .button-previous-month{visibility:hidden}.litepicker .container__months .month-item.no-next-month .button-next-month{visibility:hidden}.litepicker .container__days{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:center;-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__days>div,.litepicker .container__days>a{padding:5px 0;width:var(--litepicker-day-width)}.litepicker .container__days .day-item{color:var(--litepicker-day-color);text-align:center;text-decoration:none;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__days .day-item:hover{color:var(--litepicker-day-color-hover);-webkit-box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover);box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover)}.litepicker .container__days .day-item.is-today{color:var(--litepicker-is-today-color)}.litepicker .container__days .day-item.is-locked{color:var(--litepicker-is-locked-color)}.litepicker .container__days .day-item.is-locked:hover{color:var(--litepicker-is-locked-color);-webkit-box-shadow:none;box-shadow:none;cursor:default}.litepicker .container__days .day-item.is-in-range{background-color:var(--litepicker-is-in-range-color);border-radius:0}.litepicker .container__days .day-item.is-start-date{color:var(--litepicker-is-start-color);background-color:var(--litepicker-is-start-color-bg);border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-flipped{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date{color:var(--litepicker-is-end-color);background-color:var(--litepicker-is-end-color-bg);border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date.is-flipped{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-end-date{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-highlighted{color:var(--litepicker-highlighted-day-color);background-color:var(--litepicker-highlighted-day-color-bg)}.litepicker .container__days .week-number{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:var(--litepicker-month-week-number-color);font-size:85%}.litepicker .container__footer{text-align:right;padding:10px 5px;margin:0 5px;background-color:var(--litepicker-footer-color-bg);-webkit-box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);border-bottom-left-radius:5px;border-bottom-right-radius:5px}.litepicker .container__footer .preview-date-range{margin-right:10px;font-size:90%}.litepicker .container__footer .button-cancel{background-color:var(--litepicker-button-cancel-color-bg);color:var(--litepicker-button-cancel-color);border:0;padding:3px 7px 4px;border-radius:3px}.litepicker .container__footer .button-cancel *{pointer-events:none}.litepicker .container__footer .button-apply{background-color:var(--litepicker-button-apply-color-bg);color:var(--litepicker-button-apply-color);border:0;padding:3px 7px 4px;border-radius:3px;margin-left:10px;margin-right:10px}.litepicker .container__footer .button-apply:disabled{opacity:0.7}.litepicker .container__footer .button-apply *{pointer-events:none}.litepicker .container__tooltip{position:absolute;margin-top:-4px;padding:4px 8px;border-radius:4px;background-color:var(--litepicker-tooltip-color-bg);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.25);white-space:nowrap;font-size:11px;pointer-events:none;visibility:hidden}.litepicker .container__tooltip:before{position:absolute;bottom:-5px;left:calc(50% - 5px);border-top:5px solid rgba(0,0,0,0.12);border-right:5px solid transparent;border-left:5px solid transparent;content:""}.litepicker .container__tooltip:after{position:absolute;bottom:-4px;left:calc(50% - 4px);border-top:4px solid var(--litepicker-tooltip-color-bg);border-right:4px solid transparent;border-left:4px solid transparent;content:""}
+</style><script type="text/javascript" id="www-widgetapi-script" src="./sosumi.xyz_files/www-widgetapi.js" async=""></script><script src="./sosumi.xyz_files/iframe_api"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sosumi.xyz</title>
+    <link rel="stylesheet" href="./sosumi.xyz_files/style.css">
+    <link rel="stylesheet" href="./sosumi.xyz_files/dark.css" id="pageStyle">
+    <link rel="stylesheet" href="./sosumi.xyz_files/computering-stuff.css">
+    <link rel="shortcut icon" href="https://sosumi.xyz/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./sosumi.xyz_files/all.css">
+
+    <meta content="sosumi.xyz" property="og:title">
+    <meta content="Let it beep!" property="og:description">
+    <meta content="https://sosumi.xyz" property="og:url">
+    <meta content="https://sosumi.xyz/assets/bunnymac-big.png" property="og:image">
+    <meta content="#FFFFFF" data-react-helmet="true" name="theme-color">
+    <meta content="keywords" name="keywords">
+
+</head>
+<body>
+    
+    <main>
+        <header>
+            
+            <div class="banner">
+            </div>
+
+            <div class="logo">
+                <h1>sosumi.xyz</h1>
+                <span id="motto">Also try trickmint.gay!</span> <a onclick="randMotto()">⟳</a>
+            </div>
+
+            <div class="clear"></div>
+            
+            <div class="navbar">
+                <a href="https://youtu.be/A5Tuu6UnEe8">"And in the end the love you take is equal to the love you make"</a>
+                <span class="navbar-right">
+                    <select name="Themes" id="themeSelect">
+                        <option value="light">Classic</option>
+                        <option value="dark">Dark</option>
+                        <option value="spoopy">Spoopy</option>
+                    </select>
+                </span>
+                <br style="clear: both;">
+            </div>
+
+        </header>
+
+        <div class="leftcollumn">
+            <div class="window">
+                <div class="title">Navigation</div>
+                <div class="navcaption">Featured</div>
+                <ul>
+                    <li><a href="https://sosumi.xyz/computering/" target="_blank">Computering Webring</a></li>
+                    <li><a href="https://sosumi.xyz/oekakish/" target="_blank">/oekakish/</a></li>
+                    <li><a href="https://sosumi.xyz/art/" target="_blank">Art</a> <!--<img src="../assets/new.gif" alt="" style="vertical-align: middle;">--></li>
+                    <li><a href="https://sosumi.xyz/blog/">Blog</a></li>
+                    <li><a href="https://sosumi.xyz/sloggr/">sloggr</a></li>
+                </ul>
+                <div class="navcaption">Fun</div>
+                <ul>
+                    <li><a href="https://sosumi.xyz/goodimages/">Good Images</a></li>
+                    <li><a href="https://sosumi.xyz/blobslop/" target="_blank">(Low effort) Comics</a></li>
+                </ul>
+
+                <div class="navcaption">Games</div>
+                <ul>
+                    <li><a href="https://sosumi.xyz/games/loadmint-dash/">loadmint DASH!</a></li>
+                </ul>
+
+                <div class="navcaption">Narcisism Headquarters</div>
+                <ul>
+                    <li><a href="https://sosumi.xyz/aboutme/">About Me</a></li>
+                    <li><a href="https://sosumi.xyz/ocs/">OC Gallery </a></li>
+                    <!--<img src="../assets/new.gif" alt="" style="vertical-align: middle;">-->
+                </ul>
+            </div>
+
+            <div class="window" id="pconly">
+                <div class="title">Follow sosumi.xyz</div>
+                <div class="c" style="margin-top: 5px; margin-bottom:-10px;"><iframe src="./sosumi.xyz_files/follow.html" frameborder="0" width="170" height="28"></iframe></div>
+            </div>
+
+            <div class="window" id="pconly">
+                <div class="title">Cool people / Projects</div>
+                <div class="buttons">
+                                        <a href="http://sylvies.space/" target="_blank"><img src="./sosumi.xyz_files/sylvisite.gif" alt="sylvies.space"></a>
+                    <a href="https://eli.toys/" target="_blank"><img src="./sosumi.xyz_files/eli.gif" width="88" height="31" alt="eli.toys"></a>
+                    <a href="https://rane.nekoweb.org/" target="_blank"><img src="./sosumi.xyz_files/rane_button.png" alt="Rane Design"></a>
+                    <a href="https://zombot.net/" target="_blank"><img src="./sosumi.xyz_files/zom8831.gif" alt="zombot.net"></a>
+                    <a href="https://klaudeisbored.neocities.org/" target="_blank"><img src="./sosumi.xyz_files/button_klaude.gif"></a>
+                    <a href="https://kiwiwi.nekoweb.org/"><img src="./sosumi.xyz_files/kiwiwibutton.png"></a> 
+                    <a href="https://www.dragonflycave.com/" target="_blank"><img src="./sosumi.xyz_files/dragonflies.gif" alt="The cave of dragonflies"></a>
+                    <a href="https://ioxtv.co/"><img src="./sosumi.xyz_files/iox.gif" alt="ioxTV"></a> 
+                    <a href="https://marlee-go.at/" target="_blank"><img src="./sosumi.xyz_files/marmar8831.gif" loading="lazy" alt="marlee_goat"></a>
+                    <a href="https://satellaviewplus.github.io/" target="_blank"><img src="./sosumi.xyz_files/satellaviewplus.png" alt="Satellaview Plus"></a>
+                    <a href="https://infinitemac.org/" target="_blank"><img src="./sosumi.xyz_files/infinitemac.png" alt="Infinite Mac"></a>
+                    <a href="https://ko-fi.com/wobbuu/shop" target="_blank"><img src="./sosumi.xyz_files/vocaloidcursor.png" alt="Vocaloid Cursors NOW!"></a>
+                    <a href="https://www.youtube.com/@Techmoan" target="_blank"><img src="./sosumi.xyz_files/techmoan.gif" alt="Techmoan"></a>
+                    <a href="https://www.youtube.com/@TechnologyConnections" target="_blank"><img src="./sosumi.xyz_files/technology_connections.gif" alt="Technology Connections"></a>
+                    <a href="https://www.youtube.com/@CathodeRayDude" target="_blank"><img src="./sosumi.xyz_files/cathode_ray_dude.gif" alt="Cathode Ray Dude"></a>
+            <a href="https://www.youtube.com/c/TomScottGo/" target="_blank"><img src="./sosumi.xyz_files/tom_scott.gif" alt="Tom Scott"></a>
+                </div>
+            </div>
+
+            <div class="window">
+                <div class="title">Guestbook</div>
+                <p>Want to compliment me on my awesome site? Shill Linux? Call me a poser because I've never actually used a classic Mac before? Then why not...</p>
+                <div class="c"><a href="https://sosumi.atabook.org/" target="_blank"><h3>Sign my guestbook!</h3></a></div>
+                <p>It'd mean a lot to me!</p>
+            </div>
+
+            <div class="window" id="pconly">
+                <div class="title">Webring</div>
+                <div class="c"><img src="./sosumi.xyz_files/happymac.png" alt="A very happy macking tosh" style="margin-top: 15px;"></div>
+                <div id="computering" style="margin-top:5px;">
+  <table>
+    <tbody><tr>
+      <td class="webring-prev"><a href="https://carolinghellwalker.nekoweb.org/">←</a></td>
+      <td class="webring-info">Computering!<br>
+      <span class="webring-links">
+        <a href="javascript:void(0)" onclick="randomSite()">random</a> | 
+        <a href="https://sosumi.xyz/computering/index.html">index</a> | 
+        <a href="https://allium.house/garden/onionring/">what is this?</a></span></td>
+      <td class="webring-next"><a href="https://sylvies.space/">→</a></td>
+    </tr>
+  </tbody></table>
+  
+                    <script type="text/javascript" src="./sosumi.xyz_files/onionring-variables.js"></script>
+                    <script type="text/javascript" src="./sosumi.xyz_files/onionring-widget.js"></script>
+                </div>
+            </div>
+
+            <div class="window" id="pconly">
+                <div class="title">My button</div>
+                <p>This site has a button!</p>
+                <p>If you enjoy what I post here, why not link back to it? I'd really appreciate it!</p>
+                <div class="c"><img src="./sosumi.xyz_files/sosumi.gif" alt="sosumi.xyz!" style="margin-bottom: 10px;"></div>
+                <div class="c"><textarea rows="4" cols="22" readonly="">&lt;a href="https://sosumi.xyz/" target="_blank"&gt;&lt;img src="https://sosumi.xyz/assets/sosumi.gif" alt="sosumi.xyz"&gt;&lt;/a&gt;</textarea></div>
+            </div>
+        </div>
+
+        <div class="rightcollumn" id="pconly">
+            <div class="window">
+    <div class="title">Meet the Webmaster</div>
+    <div class="pfp"><img src="./sosumi.xyz_files/redesign.png" width="178px" style="image-rendering:optimizeQuality;" class="invert"></div>
+    <p>Hello! I'm sosumi I'm a <u><span id="age">21</span> year old</u> guy currently living in Brazil.</p>
+    <p>My pronouns are <u>He/Him</u>, and I was born on the <u>13th of January 2005.</u></p>
+    <p>If you'd like to learn some more about me, consider checking out <a href="https://sosumi.xyz/aboutme/">this section!</a></p>
+</div>
+
+<div class="window">
+    <div class="title">Latest Scrobble</div>
+    <div id="widget" style="margin-top: 5px; text-align: center;"><p>♫ <span id="song">The Beatles - Help! (Remastered 2009)</span></p></div>
+    <p style="font-size: 10px; margin-top: -10px;">Powered by <a href="https://github.com/biancarosa/lastfm-last-played?tab=readme-ov-file">biancarosa's now playing widget</a></p>
+</div>
+
+<div class="window">
+    <div class="title">Latest Status</div>
+    <div id="statuscafe" style="margin-top: 10px; filter: grayscale(100%);"><div id="statuscafe-username"><a href="https://status.cafe/users/kuro_2427" target="_blank">kuro_2427</a> 🐱 13 days ago</div><div id="statuscafe-content">It was a gouger...</div></div><script src="./sosumi.xyz_files/current-status.js" defer=""></script>
+    <p style="font-size: 10px; text-align: center;">Powered by <a href="https://status.cafe/">status.cafe</a></p>
+</div>
+
+<div class="window">
+    <div class="title">Hit me up</div>
+    <p>As of late I've been trying to cut back on my social media usage, I'm only really active on Bluesky, though I mostly just repost art and funny stuff and very rarely write my own posts.</p>
+    <p>Regardless, here's where you can find me:</p>
+    <ul>
+        <li><u>sosumi.xyz</u> on Discord</li>
+        <li><a href="https://bsky.app/profile/sosumi.xyz" rel="me">sosumi.xyz</a> on Bluesky</li>
+        <li><a href="https://sosumi.xyz/contact/" rel="me">Contact me</a> trough my contact form</li>
+    </ul>
+</div>
+
+<div class="window">
+    <div class="title">No one cares</div>
+    <p>I'm one of those losers who feels the constant urge to log and review every single work of art I smoke.</p>
+    <p>If for some reason you <i>are</i> interested in my pretentious opinions, you can find me on:</p>
+    <ul>
+        <li><a href="https://www.backloggd.com/u/Kuro2427/" target="_blank">Backloggd</a></li>
+        <li><a href="https://letterboxd.com/Kuro2427/">Letterboxd</a></li>
+        <li><a href="https://retroachievements.org/user/Kuro2427">RetroAchievements</a></li>
+        <li><a href="https://vndb.org/u224393">VNDB</a></li>
+        <li><a href="https://myanimelist.net/profile/Kuro2427">MyAnimeList</a></li>
+        <li><a href="https://www.last.fm/user/Kuro2427">Last.fm</a></li>
+    </ul>
+</div>
+
+<script>
+    //Age calculator, because I don't want to update my age every year
+    function calculateAge(birthDate) {
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDifference = today.getMonth() - birthDate.getMonth();
+            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+    }
+
+    const birthDate = new Date(2005, 0, 13); //(months are 0-indexed)
+    const ageElement = document.getElementById('age');
+    ageElement.textContent = calculateAge(birthDate);
+    console.log(calculateAge(birthDate));
+</script>
+
+<style>
+    .status-body p, .status-body b{
+        color: var(--foreground);
+    }
+</style>
+        </div>
+
+        <div class="maincontent">
+
+            <div class="c"><h1 class="welcome">Welcome to sosumi.xyz!</h1></div>
+            <p>Welcome to sosumi.xyz! I'm the titular sosumi, but I also go by sumi and sometimes Kuro, any of those are fine lol.</p>
+            <p>This place is my profoundly self-indulgent strange little corner of the worldwide web. Part business card, part journal, all queer. Really, I think the best way to describe it is a "digital scrapbook," in a way. All the odds and ends, the half finished projects, the just-for-fun doodles, the weird and somewhat concerning stuff that I felt the need to share with the world. Delightfully human, isn't it?</p>
+            <p>And what better place to put that sort of stuff than right here on nekoweb? I always felt like I was missing out on at lest <i>some</i> of the fun by always using other more traditional hosts.</p>
+            <p>So please, make yourself at home, don't mind the mess, and enjoy your stay.</p>
+
+            <div class="title">What's new? <span style="vertical-align: middle;"><a href="https://sosumi.xyz/feed.xml"><img src="./sosumi.xyz_files/rss.png" alt="[RSS]" class="invert"></a></span></div>
+            <div class="news">
+                <div id="rss-feed">
+                <p class="rss-entry">
+                    <span class="rss-date">02/08/2026</span> - 
+                    <a href="https://sosumi.xyz/" target="_blank" rel="noopener">
+                    Switched a bunch of stuff to WidgetStar!
+                    </a>
+                </p>
+                <p class="rss-description">Fully reimplemented the old e-mail page and computering join request area to both now be contact forms! Posts in Interobang?! also have comments now!!!</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">27/07/2026</span> - 
+                    <a href="https://sosumi.xyz/" target="_blank" rel="noopener">
+                    Added tribute easter egg to 404 page
+                    </a>
+                </p>
+                <p class="rss-description">Gone but not forgotten</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">24/07/2026</span> - 
+                    <a href="https://sosumi.xyz/blog/" target="_blank" rel="noopener">
+                    Reimplemented blog (again)
+                    </a>
+                </p>
+                <p class="rss-description">Yeah so I remade Interrobang from scratch for like the 4th time lmao
+We're using 11ty now so it's MUCH easier to manage than even with Nekoweb's SSI. All this stuff is on my end, though so it should hopefully look and act the same way it's always done for you guys!</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">18/07/2026</span> - 
+                    <a href="https://sosumi.xyz/" target="_blank" rel="noopener">
+                    Minor visual updates
+                    </a>
+                </p>
+                <p class="rss-description">Finally upgraded the (admittedly kinda ugly) favicon/page logo thingy to better match my current sona
+New intro paragraph too!</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">02/07/2026</span> - 
+                    <a href="https://sosumi.xyz/" target="_blank" rel="noopener">
+                    Introducing: An art page!
+                    </a>
+                </p>
+                <p class="rss-description">That's right, I draw sometimes! And my art is finally at a level where I feel comfortable with sharing it with the world. Check it out! Or don't! Your choice really.</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">02/07/2026</span> - 
+                    <a href="https://sosumi.xyz/" target="_blank" rel="noopener">
+                    More computeringers and, you guessed it. Small fixes
+                    </a>
+                </p>
+                <p class="rss-description">Welcome to computering, senrei, Sawtooth, ETAGamer and mirage! With these new folks we now have 10 whole members in this little webring! Thank you all so much!</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">04/05/2026</span> - 
+                    <a href="https://sosumi.xyz/computering" target="_blank" rel="noopener">
+                    Welcome to computering, brisray!
+                    </a>
+                </p>
+                <p class="rss-description">Added Ray's Miscellany to the computering webring + some minor fixes</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">03/04/2026</span> - 
+                    <a href="https://sosumi.xyz/ocs/" target="_blank" rel="noopener">
+                    Reworked OC Gallery
+                    </a>
+                </p>
+                <p class="rss-description">Fully remade the OC gallery page to be more fun AND fun-ctional!
+Please go check it out, I worked really hard on it and think it's neat</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">02/04/2026</span> - 
+                    <a href="https://sosumi.xyz/" target="_blank" rel="noopener">
+                    Unapriled be thy fools
+                    </a>
+                </p>
+                <p class="rss-description">We at sosumitech greatly value ours user's experience. After receiving tons of feedback from our valued netizens, we have decided to roll back the update released yesterday on the 1st of April. Unfortunately, due to the wasted 300 million dollar investment in research and development required to develop this technology, sosumitech will cease being a corporate entity immediately. Website operations will continue as usual.</p>
+                <hr>
+                
+                <p class="rss-entry">
+                    <span class="rss-date">01/04/2026</span> - 
+                    <a href="https://sosumi.xyz/" target="_blank" rel="noopener">
+                    sosumi.xyz is finally in full color now!
+                    </a>
+                </p>
+                <p class="rss-description">After one whole year operating in black and white mode, our engineers at sosumitech have finally cracked the code to displaying all your favorite pages in brilliant, vibrant colors! The future is now, and it's in color.</p>
+                
+                </div>
+                <a href="https://sosumi.xyz/home/newsarchive.html" target="_blank" style="float: right;">Archive</a><br><br>
+            </div>
+
+            <div class="title">Slogs</div>
+            <p>It's like microblogging but harder and jankier!</p>
+            <iframe src="./sosumi.xyz_files/saved_resource.html"></iframe>
+            <div class="c" style="margin-top: -10px; margin-bottom: 10px; font-size: 10px;">Powered by <a href="https://sosumi.xyz/sloggr/">sloggr</a></div>
+
+            <div class="title">The spotlight</div>
+            <p>This subsection is where I showcase cool things I'd like to share, but <s>I was too lazy to</s> for one reason or another I couldn't write a full blog article on. So please, if you have the time, check out...</p>
+
+            <hr>
+
+            <p></p><h3><a href="https://ballsack.tv/">Ballsack TV</a></h3><p></p>
+            <p>Hands down my favorite web radio ever. Died briefly in 2024 but came back as a fan run project in a really neat format similar to MTV where you can watch the music videos along with the songs!!</p>
+
+            <hr>
+
+            <p></p><h3><a href="https://www.youtube.com/@hhhazel">Hazel</a></h3><p></p>
+            <p>Hazel is THE best video essayist on YouTube right now hands down. She covers some really interesting stuff, and her videos are insanely well written and paced. </p>
+
+            <hr>
+
+            <p></p><h3><a href="https://www.youtube.com/@FNWeeaboo">FNWeeaboo</a></h3><p></p>
+            <p>One of the best rhythm game channels on YouTube, and DEFINITELY the most overlooked one.<br>His dead rhythm games series is top notch content.</p>
+
+            <hr>
+
+            <p></p><h3><a href="https://7nonsense.neocities.org/">7nonsense</a></h3><p></p>
+            <p>A stylish website featuring cool photos taken on old and unusual hardware.</p>
+
+        </div>
+
+        <div class="mobileonly">
+
+            <div class="window">
+                <div class="title">Follow sosumi.xyz</div>
+                <div class="c" style="margin-top: 5px; margin-bottom:-10px;"><iframe src="./sosumi.xyz_files/follow(1).html" frameborder="0" width="170" height="28" class="invert"></iframe></div>
+            </div>
+
+            <div class="window">
+                <div class="title">Buttons</div>
+                <div class="buttons">
+                    <marquee behavior="" direction="">
+                                            <a href="http://sylvies.space/" target="_blank"><img src="./sosumi.xyz_files/sylvisite.gif" alt="sylvies.space"></a>
+                    <a href="https://eli.toys/" target="_blank"><img src="./sosumi.xyz_files/eli.gif" width="88" height="31" alt="eli.toys"></a>
+                    <a href="https://rane.nekoweb.org/" target="_blank"><img src="./sosumi.xyz_files/rane_button.png" alt="Rane Design"></a>
+                    <a href="https://zombot.net/" target="_blank"><img src="./sosumi.xyz_files/zom8831.gif" alt="zombot.net"></a>
+                    <a href="https://klaudeisbored.neocities.org/" target="_blank"><img src="./sosumi.xyz_files/button_klaude.gif"></a>
+                    <a href="https://kiwiwi.nekoweb.org/"><img src="./sosumi.xyz_files/kiwiwibutton.png"></a> 
+                    <a href="https://www.dragonflycave.com/" target="_blank"><img src="./sosumi.xyz_files/dragonflies.gif" alt="The cave of dragonflies"></a>
+                    <a href="https://ioxtv.co/"><img src="./sosumi.xyz_files/iox.gif" alt="ioxTV"></a> 
+                    <a href="https://marlee-go.at/" target="_blank"><img src="./sosumi.xyz_files/marmar8831.gif" loading="lazy" alt="marlee_goat"></a>
+                    <a href="https://satellaviewplus.github.io/" target="_blank"><img src="./sosumi.xyz_files/satellaviewplus.png" alt="Satellaview Plus"></a>
+                    <a href="https://infinitemac.org/" target="_blank"><img src="./sosumi.xyz_files/infinitemac.png" alt="Infinite Mac"></a>
+                    <a href="https://ko-fi.com/wobbuu/shop" target="_blank"><img src="./sosumi.xyz_files/vocaloidcursor.png" alt="Vocaloid Cursors NOW!"></a>
+                    <a href="https://www.youtube.com/@Techmoan" target="_blank"><img src="./sosumi.xyz_files/techmoan.gif" alt="Techmoan"></a>
+                    <a href="https://www.youtube.com/@TechnologyConnections" target="_blank"><img src="./sosumi.xyz_files/technology_connections.gif" alt="Technology Connections"></a>
+                    <a href="https://www.youtube.com/@CathodeRayDude" target="_blank"><img src="./sosumi.xyz_files/cathode_ray_dude.gif" alt="Cathode Ray Dude"></a>
+            <a href="https://www.youtube.com/c/TomScottGo/" target="_blank"><img src="./sosumi.xyz_files/tom_scott.gif" alt="Tom Scott"></a>
+                    </marquee>
+                </div>
+            </div>
+
+            <div class="window">
+    <div class="title">Meet the Webmaster</div>
+    <div class="pfp"><img src="./sosumi.xyz_files/redesign.png" width="178px" style="image-rendering:optimizeQuality;" class="invert"></div>
+    <p>Hello! I'm sosumi I'm a <u><span id="age">21</span> year old</u> guy currently living in Brazil.</p>
+    <p>My pronouns are <u>He/Him</u>, and I was born on the <u>13th of January 2005.</u></p>
+    <p>If you'd like to learn some more about me, consider checking out <a href="https://sosumi.xyz/aboutme/">this section!</a></p>
+</div>
+
+<div class="window">
+    <div class="title">Latest Scrobble</div>
+    <div id="widget" style="margin-top: 5px; text-align: center;"><p>♫ <span id="song">⌛</span></p></div>
+    <p style="font-size: 10px; margin-top: -10px;">Powered by <a href="https://github.com/biancarosa/lastfm-last-played?tab=readme-ov-file">biancarosa's now playing widget</a></p>
+</div>
+
+<div class="window">
+    <div class="title">Latest Status</div>
+    <div id="statuscafe" style="margin-top: 10px; filter: grayscale(100%);"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="./sosumi.xyz_files/current-status.js" defer=""></script>
+    <p style="font-size: 10px; text-align: center;">Powered by <a href="https://status.cafe/">status.cafe</a></p>
+</div>
+
+<div class="window">
+    <div class="title">Hit me up</div>
+    <p>As of late I've been trying to cut back on my social media usage, I'm only really active on Bluesky, though I mostly just repost art and funny stuff and very rarely write my own posts.</p>
+    <p>Regardless, here's where you can find me:</p>
+    <ul>
+        <li><u>sosumi.xyz</u> on Discord</li>
+        <li><a href="https://bsky.app/profile/sosumi.xyz" rel="me">sosumi.xyz</a> on Bluesky</li>
+        <li><a href="https://sosumi.xyz/contact/" rel="me">Contact me</a> trough my contact form</li>
+    </ul>
+</div>
+
+<div class="window">
+    <div class="title">No one cares</div>
+    <p>I'm one of those losers who feels the constant urge to log and review every single work of art I smoke.</p>
+    <p>If for some reason you <i>are</i> interested in my pretentious opinions, you can find me on:</p>
+    <ul>
+        <li><a href="https://www.backloggd.com/u/Kuro2427/" target="_blank">Backloggd</a></li>
+        <li><a href="https://letterboxd.com/Kuro2427/">Letterboxd</a></li>
+        <li><a href="https://retroachievements.org/user/Kuro2427">RetroAchievements</a></li>
+        <li><a href="https://vndb.org/u224393">VNDB</a></li>
+        <li><a href="https://myanimelist.net/profile/Kuro2427">MyAnimeList</a></li>
+        <li><a href="https://www.last.fm/user/Kuro2427">Last.fm</a></li>
+    </ul>
+</div>
+
+<script>
+    //Age calculator, because I don't want to update my age every year
+    function calculateAge(birthDate) {
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDifference = today.getMonth() - birthDate.getMonth();
+            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+    }
+
+    const birthDate = new Date(2005, 0, 13); //(months are 0-indexed)
+    const ageElement = document.getElementById('age');
+    ageElement.textContent = calculateAge(birthDate);
+    console.log(calculateAge(birthDate));
+</script>
+
+<style>
+    .status-body p, .status-body b{
+        color: var(--foreground);
+    }
+</style>
+
+        </div>
+
+        
+
+        <div class="clear"></div>
+
+    </main>
+
+    <div class="radio" id="pconly">
+            <div class="title" style="width: 250px; margin: auto;">Radio <a onclick="toggleRadio()" class="invert">[-]</a></div>
+            <div class="embed-container" style="margin-bottom: -9px;" id="ratio">
+                <iframe id="player" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Ib OST - &quot;Memory&quot; (Ib&#39;s Theme / Title Song)" width="250" height="250" src="./sosumi.xyz_files/saved_resource(1).html"></iframe>
+            </div>
+            <script src="./sosumi.xyz_files/ytplayer.js"></script> 
+    </div>
+    
+    <script src="./sosumi.xyz_files/themeswitcher.js"></script>
+    <script src="./sosumi.xyz_files/cookiefunctions.js"></script>
+
+    <script>
+        possibleMottos=["On the internet, no one knows you're 6 fursonas in a trench coat","Ironically not made with WYSIWYG","It USED TO BE a Perfect Blue reference!","Because unclesumisphantomfunhou.se was too expensive","Also try rakugaki.xyz!","Also try trickmint.gay!","Home of awesome","Presented in 1 glorious bit","The Macintosh is neat","Who needs a dark mode, anyway?","Maybe it's the way you're dressed","All that computer I'm buying","The sky had a Pokémon","I play computer","The human brain is just a really complex hypercard stack actually","As seen on stupid.com!","Let it beep!","I think it can digging in the ground for tubers"];
+        halloMottos=["Coming out to socialize while grinning grimly!", "There used to be a light mode here, it's gone now","Rated #1 most terrifying website by Leporiphobics Monthly","#TeamWerewolves but vampires are cool too","CREEPYPASTA! AUGH!!","Coming soon to a haunted Mac near you!","man door hand hook car door","Now with up to 50% more hyperrealistic blood and eyes!","\"Is this a hole I see before me?\" And it echoed like a hole...","then Mare-e-o appeared but then gaussian blurred away"];
+
+        mottoDiv=document.getElementById("motto");
+        function randMotto(){
+            if(getCookie("egg")=="accepted"){
+                possibleMottos.push("* (He waves at you happily.)")
+            }
+
+            var number=Math.floor(Math.random()*possibleMottos.length);
+            mottoDiv.innerHTML=possibleMottos[number];
+        }
+
+        randMotto();
+    </script>
+
+    <script type="text/javascript">
+
+        let user = 'kuro2427';
+        let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+        let song = document.querySelector('#song');
+        fetch(url)
+            .then(function (response) {
+                return response.json()
+            }).then(function (json) {
+                song.innerHTML = json['track']['artist']['#text'] + ' - ' + json['track']['name'];
+            });
+
+    </script>
+
+    <script>
+        (async function () {
+        // ===== CONFIG =====
+        const FEED_URL = "https://sosumi.xyz/feed.xml";
+        const USE_PROXY = true; // set to false if your feed allows CORS
+        const MAX_ITEMS = 10;
+
+        const PROXY = "https://api.rss2json.com/v1/api.json?rss_url=";
+
+        const target = document.getElementById("rss-feed");
+        if (!target) return;
+
+        try {
+            let items = [];
+
+            if (USE_PROXY) {
+            const res = await fetch(PROXY + encodeURIComponent(FEED_URL));
+            const data = await res.json();
+            items = data.items || [];
+            } else {
+            const res = await fetch(FEED_URL);
+            const text = await res.text();
+            const xml = new DOMParser().parseFromString(text, "text/xml");
+            items = [...xml.querySelectorAll("item")].map(item => ({
+                title: item.querySelector("title")?.textContent ?? "",
+                link: item.querySelector("link")?.textContent ?? "",
+                pubDate: item.querySelector("pubDate")?.textContent ?? "",
+                description: item.querySelector("description")?.textContent ?? ""
+            }));
+            }
+
+            target.innerHTML = items
+            .slice(0, MAX_ITEMS)
+            .map((item, index) => {
+                const date = new Date(item.pubDate);
+                const formattedDate = isNaN(date)
+                ? ""
+                : date.toLocaleDateString(undefined, {
+                    year: "numeric",
+                    month: "2-digit",
+                    day: "2-digit"
+                    });
+
+                return `
+                <p class="rss-entry">
+                    <span class="rss-date">${formattedDate}</span> - 
+                    <a href="${item.link}" target="_blank" rel="noopener">
+                    ${item.title}
+                    </a>
+                </p>
+                ${item.description ? `<p class="rss-description">${item.description}</p>` : ""}
+                ${index < MAX_ITEMS - 1 ? "<hr>" : ""}
+                `;
+            })
+            .join("");
+        } catch (err) {
+            target.textContent = "Failed to load RSS feed.";
+            console.error(err);
+        }
+        })();
+    </script>
+
+
+
+
+<deepl-input-controller translate="no"><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div dir="ltr" style="visibility: initial !important;"><div class="dl-input-translation-container svelte-95aucy"><div></div></div></div></template></deepl-input-controller></body></html>

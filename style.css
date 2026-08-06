@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booga's Webbed Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <!-- Here is the code for your banner image -->
-  <img src="banner.jpg" alt="Booga's Webbed Site on the Interwept">
-
-  <h1>Welcome to my first website!</h1>
-  <p>This is being built in Visual Studio Code.</p>
-
-</body>
-</html>
+body {
+  background-color: #fffefe;
+}
+h1 {
+  color: #ff0000;
+  text-align: center;
+}
