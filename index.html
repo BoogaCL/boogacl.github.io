@@ -13,31 +13,21 @@
   <h1>Welcome to my first website!</h1>
   <p>This is being built in Visual Studio Code.</p>
 
-  <!-- This button triggers the JavaScript function below -->
-  <button onclick="playMusic()">Play Theme Song</button>
+<!-- This button triggers the JavaScript function below -->
 
-  <!-- JavaScript goes inside script tags -->
-  <script>
-    function playMusic() {
-      // 1. Generate a random whole number between 1 and 10
-      let chance = Math.floor(Math.random() * 10) + 1;
-      
-      // 2. Create a variable to hold our audio
-      let audio;
+<audio id="audio" src="bad-to-the-bone.mp3" autoplay controls></audio>
 
-      // 3. The Logic: If the number is exactly 1, prep the riff
-      if (chance === 1) {
-        audio = new Audio('riff.mp3');
-      } 
-      // 4. Otherwise (for numbers 2 through 10), prep the full song
-      else {
-        audio = new Audio('bad-to-the-bone.mp3');
-      }
+<script>
+  // Get the audio element
+  const audio = document.getElementById('audio');
+  rand = Math.floor(Math.random() * 10) + 1; // Generate a random number between 1 and 100
 
-      // 5. Play the selected audio
-      audio.play();
+  if (rand == 7) {
+    audio.src="riff.mp3"
+    audio.play();
     }
-  </script>
+</script>
+
 
 </body>
 </html>
