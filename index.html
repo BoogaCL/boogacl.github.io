@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booga's Webbed Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <img src="banner.jpg" alt="Booga's Webbed Site on the Interwept">
+
+  <h1>Welcome to my first website!</h1>
+  <p>This is being built in Visual Studio Code.</p>
+
+  <!-- This button triggers the JavaScript function below -->
+  <button onclick="playMusic()">Play Theme Song</button>
+
+  <!-- JavaScript goes inside script tags -->
+  <script>
+    function playMusic() {
+      // 1. Generate a random whole number between 1 and 10
+      let chance = Math.floor(Math.random() * 10) + 1;
+      
+      // 2. Create a variable to hold our audio
+      let audio;
+
+      // 3. The Logic: If the number is exactly 1, prep the riff
+      if (chance === 1) {
+        audio = new Audio('riff.mp3');
+      } 
+      // 4. Otherwise (for numbers 2 through 10), prep the full song
+      else {
+        audio = new Audio('bad-to-the-bone.mp3');
+      }
+
+      // 5. Play the selected audio
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
